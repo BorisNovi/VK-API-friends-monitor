@@ -36,6 +36,23 @@ button {
     border-radius: 2px;
 }
 
+button {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+
+        transform: scale(0.5);
+    }
+
+    to {
+
+        transform: scale(1);
+    }
+}
+
 button:hover {
     color: #37689f;
     background-color: rgb(163, 189, 210);
