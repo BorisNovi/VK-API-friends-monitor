@@ -183,6 +183,15 @@ function sendMessage(event) {
   });
 } // It will not work without verification!
 
+function playSound(sound) {
+  var song = document.getElementById(sound);
+  song.volume = 1;
+  if (song.paused) {
+    song.play();
+  } else {
+    song.pause();
+  }
+}
 
 //access_token=vk1.a.u8AdPf34b2DTOGVhsg47jE_qW0Xcxmgf8WBWiVxbI8DuMjyfbwlYghnJ5dlAq2Vcl1UovmiAxBQDaOSwclhDezFAREA50kG2A4zKaq7XiTWp65nkLcOQKSztlgrcjwaOHvII7eB-BAOYPRTXMH7qZT2FVNk8H0AVQCTTeLZYWJINRibc_pGqmluTp1n-_B8j
 // window.open("https://oauth.vk.com/authorize?client_id=51552231&display=page&redirect_uri=&scope=offline,friends&response_type=token&v=5.131"); Запросить токен

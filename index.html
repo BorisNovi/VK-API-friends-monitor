@@ -18,7 +18,10 @@
         <section class="wrapper">
             <h2>Friend's monitor</h2>
         </section>
-        <button id="load">Show friends list</button>
+        <audio id="sound">
+            <source src="res/metal-pipe-falling-sound.mp3" type="audio/mp3">
+        </audio>
+        <button id="load" onclick="playSound('sound')">Show friends list</button>
         <div class="detail" style="display: none">
             <img src="" alt="">
             <h3></h3>
